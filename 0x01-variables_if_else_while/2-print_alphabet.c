@@ -14,7 +14,7 @@ int i = 0;
 
 while (i < 26)
 {
-putchar(a)
+putchar(a);
 a++;
 i++;
 }
