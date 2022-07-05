@@ -1,11 +1,35 @@
 #include "main.h"
 /**
- * main - checks the code
- *
- * Return: Always 0.
+ * times_table - prints 9 times table, starting from 0
  */
-int main(void)
+void times_table(void)
 {
-times_table();
-return (0);
+int i, j, mult;
+
+for (i = 0; i < 10; i++)
+{
+for (j = 0; j < 10; j++)
+{
+mult = j * i;
+if (j == 0)
+{
+_putchar(mult + '0');
+}
+if (mult < 10 && j != 0)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(mult + '0');
+}
+else if (mult >= 10)
+{
+_putchar(',');
+_putchar(' ');
+_putchar((mult / 10) + '0');
+_putchar((mult % 10) + '0');
+}
+}
+_putchar('\n');
+}
 }
