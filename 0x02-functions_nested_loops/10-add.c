@@ -1,15 +1,12 @@
-nclude "main.h"
-#include "stdio.h"
+#include "main.h"
 /**
- * main - checks the code
+ * add - add is a function that adds two numbers
+ * @a: the first parameter
+ * @b: the second parameter
  *
- * Return: Always 0.
+ * Return: int
  */
-int main(void)
+int add(int a, int b)
 {
-int n;
-
-n = add(89, 9);
-printf("%d\n", n);
-return (0);
+return (a + b);
 }
